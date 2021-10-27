@@ -1,0 +1,6 @@
+{
+  "parent" : "minecraft:block/cross",
+  "textures" : {
+    "cross" : "ellada:block/olive_sapling"
+  }
+}

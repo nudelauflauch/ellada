@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "ellada:block/dry_grass_block_top",
+    "bottom": "ellada:block/dry_dirt",
+    "side": "ellada:block/dry_grass_block_side"
+  }
+}

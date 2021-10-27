@@ -1,0 +1,14 @@
+
+        {
+      "variants": {
+        "type=bottom": {
+          "model": "ellada:block/very_weatherd_blue_holm_oak_slab"
+        },
+        "type=double": {
+          "model": "ellada:block/very_weatherd_blue_holm_oak_planks"
+        },
+        "type=top": {
+          "model": "ellada:block/very_weatherd_blue_holm_oak_slab_top"
+        }
+      }
+    } 

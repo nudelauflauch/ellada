@@ -1,0 +1,6 @@
+{
+      "parent": "minecraft:block/template_orientable_trapdoor_open",
+      "textures": {
+        "texture": "ellada:block/very_weatherd_blue_holm_oak_trapdoor"
+      }
+    }

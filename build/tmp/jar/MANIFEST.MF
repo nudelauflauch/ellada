@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: ellada
+Specification-Vendor: nudlauflauch
+Specification-Version: 1
+Implementation-Title: ellada
+Implementation-Version: alpha-0.1
+Implementation-Vendor: nudlauflauch
+Implementation-Timestamp: 2021-10-26T22:10:17+0200
+

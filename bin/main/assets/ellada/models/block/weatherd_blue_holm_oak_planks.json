@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ellada:block/weatherd_blue_holm_oak_planks"
+  }
+}

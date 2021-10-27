@@ -1,0 +1,7 @@
+{
+      "parent": "minecraft:block/door_bottom",
+      "textures": {
+        "top": "ellada:block/olive_door_top",
+        "bottom": "ellada:block/olive_door_bottom"
+      }
+    }

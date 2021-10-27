@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/fence_side",
+    "textures": {
+        "texture": "ellada:block/very_weatherd_blue_holm_oak_planks"
+        }
+        }

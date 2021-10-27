@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/button_pressed",
+    "textures": {
+        "texture": "ellada:block/holm_oak_planks"
+    }
+    }
