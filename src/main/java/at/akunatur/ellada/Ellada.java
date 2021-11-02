@@ -42,8 +42,8 @@ public class Ellada {
 		ItemBlockRenderTypes.setRenderLayer(BlockInit.DRY_SAPLING.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(BlockInit.OLIVE_LEAVES.get(), RenderType.translucent());
 		ItemBlockRenderTypes.setRenderLayer(BlockInit.BLUE_HOLM_OAK_DOOR.get(), RenderType.cutout());
-		ItemBlockRenderTypes.setRenderLayer(BlockInit.WEATHERD_BLUE_HOLM_OAK_DOOR.get(), RenderType.cutout());
-		ItemBlockRenderTypes.setRenderLayer(BlockInit.VERY_WEATHERD_BLUE_HOLM_OAK_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(BlockInit.WEATHERED_BLUE_HOLM_OAK_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(BlockInit.VERY_WEATHERED_BLUE_HOLM_OAK_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(BlockInit.HOLM_OAK_DOOR.get(), RenderType.cutout());
 	}
 

@@ -1,3 +1,6 @@
 {
-	"parent": "ellada:block/holm_oak_door"
+  "parent" : "minecraft:item/generated",
+  "textures" : {
+    "layer0" : "ellada:item/holm_oak_door"
+  }
 }

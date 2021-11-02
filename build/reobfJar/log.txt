@@ -1,5 +1,5 @@
 Java Launcher: C:\Users\felix\.gradle\jdks\jdk-16.0.1+9\bin\java.exe
-Arguments: '--in-jar, C:\dev\minecraft\ellada\build\libs\ellada-alpha-0.1.jar, --out-jar, C:\dev\minecraft\ellada\build\reobfJar\output.jar, --srg-in, C:\dev\minecraft\ellada\build\createMcpToSrg\output.tsrg, --live'
+Arguments: '--in-jar, C:\dev\minecraft\ellada\build\libs\ellada-alpha-0.2.1.jar, --out-jar, C:\dev\minecraft\ellada\build\reobfJar\output.jar, --srg-in, C:\dev\minecraft\ellada\build\createMcpToSrg\output.tsrg, --live'
 Classpath:
  - C:\Users\felix\.gradle\caches\forge_gradle\maven_downloader\net\md-5\SpecialSource\1.10.0\SpecialSource-1.10.0-shaded.jar
  - C:\Users\felix\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.17.1-37.0.103_mapped_official_1.17.1\forge-1.17.1-37.0.103_mapped_official_1.17.1-recomp.jar

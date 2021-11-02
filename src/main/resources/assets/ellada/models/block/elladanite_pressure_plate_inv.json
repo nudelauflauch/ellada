@@ -1,0 +1,6 @@
+{
+  "parent" : "ellada:block/pressure_plate_inv",
+  "textures" : {
+    "texture" : "ellada:block/elladanite"
+  }
+}

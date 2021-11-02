@@ -1,0 +1,10 @@
+{
+  "variants" : {
+    "powered=false" : {
+      "model" : "ellada:block/weatherd_blue_holm_oak_pressure_plate"
+    },
+    "powered=true" : {
+      "model" : "ellada:block/weatherd_blue_holm_oak_pressure_plate_down"
+    }
+  }
+}

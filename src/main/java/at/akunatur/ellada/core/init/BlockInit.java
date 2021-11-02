@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.TrapDoorBlock;
+import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.fmllegacy.RegistryObject;
@@ -38,38 +39,113 @@ public class BlockInit {
 	public static final RegistryObject<Block> DRY_SAPLING = BLOCKS.register("dry_sapling", () -> new Block(
 			BlockBehaviour.Properties.of(Material.GRASS).noOcclusion().noCollission().sound(SoundType.GRASS)));
 
+	// elladanite
 	public static final RegistryObject<Block> ELLADANITE = BLOCKS.register("elladanite",
 			() -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
+	public static final RegistryObject<Block> ELLADANITE_STAIRS = BLOCKS.register("elladanite_stairs",
+			() -> new StairBlock(() -> BlockInit.ELLADANITE.get().defaultBlockState(),
+					BlockBehaviour.Properties.of(Material.STONE)));
+
+	public static final RegistryObject<Block> ELLADANITE_SLAB = BLOCKS.register("elladanite_slab",
+			() -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
+
+	public static final RegistryObject<Block> ELLADANITE_PRESSURE_PLATE = BLOCKS.register("elladanite_pressure_plate",
+			() -> new PresureplateBlock(Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+
+	public static final RegistryObject<Block> ELLADANITE_BUTTON = BLOCKS.register("elladanite_button",
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+
+	// cobbled_elladanite
 	public static final RegistryObject<Block> COBBLED_ELLADANITE = BLOCKS.register("cobbled_elladanite",
 			() -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
+	public static final RegistryObject<Block> COBBLED_ELLADANITE_STAIRS = BLOCKS.register("cobbled_elladanite_stairs",
+			() -> new StairBlock(() -> BlockInit.COBBLED_ELLADANITE.get().defaultBlockState(),
+					BlockBehaviour.Properties.copy(Blocks.STONE)));
+
+	public static final RegistryObject<Block> COBBLED_ELLADANITE_SLAB = BLOCKS.register("cobbled_elladanite_slab",
+			() -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
+
+	public static final RegistryObject<Block> COBBLED_ELLADANITE_WALL = BLOCKS.register("cobbled_elladanite_wall",
+			() -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
+
+	public static final RegistryObject<Block> COBBLED_ELLADANITE_PRESSURE_PLATE = BLOCKS.register(
+			"cobbled_elladanite_pressure_plate",
+			() -> new PresureplateBlock(Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+
+	public static final RegistryObject<Block> COBBLED_ELLADANITE_BUTTON = BLOCKS.register("cobbled_elladanite_button",
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+
+	// elladanite_bricks
 	public static final RegistryObject<Block> ELLADANITE_BRICKS = BLOCKS.register("elladanite_bricks",
 			() -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
 
+	public static final RegistryObject<Block> ELLADANITE_BRICKS_STAIRS = BLOCKS.register("elladanite_bricks_stairs",
+			() -> new StairBlock(() -> BlockInit.ELLADANITE_BRICKS.get().defaultBlockState(),
+					BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+
+	public static final RegistryObject<Block> ELLADANITE_BRICKS_SLAB = BLOCKS.register("elladanite_bricks_slab",
+			() -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+
+	public static final RegistryObject<Block> ELLADANITE_BRICKS_WALL = BLOCKS.register("elladanite_bricks_wall",
+			() -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+
+	// slaked
+	public static final RegistryObject<Block> SLAKED_ELLADANITE = BLOCKS.register("slaked_elladanite",
+			() -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+
+	public static final RegistryObject<Block> SLAKED_ELLADANITE_STAIRS = BLOCKS.register("slaked_elladanite_stairs",
+			() -> new StairBlock(() -> BlockInit.SLAKED_ELLADANITE.get().defaultBlockState(),
+					BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+
+	public static final RegistryObject<Block> SLAKED_ELLADANITE_SLAB = BLOCKS.register("slaked_elladanite_slab",
+			() -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+
+	public static final RegistryObject<Block> SLAKED_ELLADANITE_WALL = BLOCKS.register("slaked_elladanite_wall",
+			() -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+
+	public static final RegistryObject<Block> SLAKED_ELLADANITE_PRESSURE_PLATE = BLOCKS.register(
+			"slaked_elladanite_pressure_plate",
+			() -> new PresureplateBlock(Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+
+	public static final RegistryObject<Block> SLAKED_ELLADANITE_BUTTON = BLOCKS.register("slaked_elladanite_button",
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+
+	// slaked_elladanite_bricks
+	public static final RegistryObject<Block> SLAKED_ELLADANITE_BRICKS = BLOCKS.register("slaked_elladanite_bricks",
+			() -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+
+	public static final RegistryObject<Block> SLAKED_ELLADANITE_BRICKS_STAIRS = BLOCKS.register(
+			"slaked_elladanite_bricks_stairs",
+			() -> new StairBlock(() -> BlockInit.SLAKED_ELLADANITE_BRICKS.get().defaultBlockState(),
+					BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+
+	public static final RegistryObject<Block> SLAKED_ELLADANITE_BRICKS_SLAB = BLOCKS.register(
+			"slaked_elladanite_bricks_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+
+	public static final RegistryObject<Block> SLAKED_ELLADANITE_BRICKS_WALL = BLOCKS.register(
+			"slaked_elladanite_bricks_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+
+	// rest
 	public static final RegistryObject<Block> CHISELED_SKALKED_ELLADANITE = BLOCKS.register(
 			"chiseled_skalked_elladanite", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
 
 	public static final RegistryObject<Block> PAINTED_COBBLED_ELLADANITE = BLOCKS.register("painted_cobbled_elladanite",
 			() -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
 
-	public static final RegistryObject<Block> SLAKED_ELLADANITE = BLOCKS.register("slaked_elladanite",
-			() -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
-
-	public static final RegistryObject<Block> SLAKED_ELLADANITE_BRICKS = BLOCKS.register("slaked_elladanite_bricks",
-			() -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
-
 	public static final RegistryObject<Block> SLAKED_ELLADANITE_PILLAR = BLOCKS.register("slaked_elladanite_pillar",
 			() -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
 
+	// door
 	public static final RegistryObject<Block> BLUE_HOLM_OAK_DOOR = BLOCKS.register("blue_holm_oak_door",
 			() -> new EDoorBlock(BlockBehaviour.Properties.of(Material.WOOD)));
 
-	public static final RegistryObject<Block> WEATHERD_BLUE_HOLM_OAK_DOOR = BLOCKS
-			.register("weatherd_blue_holm_oak_door", () -> new EDoorBlock(BlockBehaviour.Properties.of(Material.WOOD)));
+	public static final RegistryObject<Block> WEATHERED_BLUE_HOLM_OAK_DOOR = BLOCKS
+			.register("weathered_blue_holm_oak_door", () -> new EDoorBlock(BlockBehaviour.Properties.of(Material.WOOD)));
 
-	public static final RegistryObject<Block> VERY_WEATHERD_BLUE_HOLM_OAK_DOOR = BLOCKS.register(
-			"very_weatherd_blue_holm_oak_door", () -> new EDoorBlock(BlockBehaviour.Properties.of(Material.WOOD)));
+	public static final RegistryObject<Block> VERY_WEATHERED_BLUE_HOLM_OAK_DOOR = BLOCKS.register(
+			"very_weathered_blue_holm_oak_door", () -> new EDoorBlock(BlockBehaviour.Properties.of(Material.WOOD)));
 
 	// blue
 	public static final RegistryObject<Block> BLUE_HOLM_OAK_PLANKS = BLOCKS.register("blue_holm_oak_planks",
@@ -98,70 +174,71 @@ public class BlockInit {
 			.register("blue_holm_oak_pressure_plate", () -> new PresureplateBlock(Sensitivity.EVERYTHING,
 					BlockBehaviour.Properties.of(Material.WOOD).strength(5f, 7f)));
 
-	// weatherd
-	public static final RegistryObject<Block> WEATHERD_BLUE_HOLM_OAK_PLANKS = BLOCKS
-			.register("weatherd_blue_holm_oak_planks", () -> new Block(BlockBehaviour.Properties.of(Material.WOOD)));
+	// weathered
+	public static final RegistryObject<Block> WEATHERED_BLUE_HOLM_OAK_PLANKS = BLOCKS
+			.register("weathered_blue_holm_oak_planks", () -> new Block(BlockBehaviour.Properties.of(Material.WOOD)));
 
-	public static final RegistryObject<Block> WEATHERD_BLUE_HOLM_OAK_STAIR = BLOCKS.register(
-			"weatherd_blue_holm_oak_stairs",
+	public static final RegistryObject<Block> WEATHERED_BLUE_HOLM_OAK_STAIR = BLOCKS.register(
+			"weathered_blue_holm_oak_stairs",
 			() -> new StairBlock(() -> BlockInit.HOLM_OAK_LOG.get().defaultBlockState(),
 					BlockBehaviour.Properties.of(Material.WOOD).strength(5f, 7f)));
 
-	public static final RegistryObject<Block> WEATHERD_BLUE_HOLM_OAK_SLAB = BLOCKS.register(
-			"weatherd_blue_holm_oak_slab",
+	public static final RegistryObject<Block> WEATHERED_BLUE_HOLM_OAK_SLAB = BLOCKS.register(
+			"weathered_blue_holm_oak_slab",
 			() -> new SlabBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(5f, 7f)));
 
-	public static final RegistryObject<Block> WEATHERD_BLUE_HOLM_OAK_FENCE = BLOCKS.register(
-			"weatherd_blue_holm_oak_fence",
+	public static final RegistryObject<Block> WEATHERED_BLUE_HOLM_OAK_FENCE = BLOCKS.register(
+			"weathered_blue_holm_oak_fence",
 			() -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(5f, 7f)));
 
-	public static final RegistryObject<Block> WEATHERD_BLUE_HOLM_OAK_FENCE_GATE = BLOCKS.register(
-			"weatherd_blue_holm_oak_fence_gate",
+	public static final RegistryObject<Block> WEATHERED_BLUE_HOLM_OAK_FENCE_GATE = BLOCKS.register(
+			"weathered_blue_holm_oak_fence_gate",
 			() -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(5f, 7f)));
 
-	public static final RegistryObject<Block> WEATHERD_BLUE_HOLM_OAK_BUTTON = BLOCKS.register(
-			"weatherd_blue_holm_oak_button",
+	public static final RegistryObject<Block> WEATHERED_BLUE_HOLM_OAK_BUTTON = BLOCKS.register(
+			"weathered_blue_holm_oak_button",
 			() -> new ButtonBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(5f, 7f)));
 
-	public static final RegistryObject<Block> WEATHERD_BLUE_HOLM_OAK_TRAPDOOR = BLOCKS.register(
-			"weatherd_blue_holm_oak_trapdoor",
+	public static final RegistryObject<Block> WEATHERED_BLUE_HOLM_OAK_TRAPDOOR = BLOCKS.register(
+			"weathered_blue_holm_oak_trapdoor",
 			() -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(5f, 7f)));
 
-	public static final RegistryObject<Block> WEATHERD_BLUE_HOLM_OAK_PRESSURER_PLATE = BLOCKS
-			.register("weatherd_blue_holm_oak_pressure_plate", () -> new PresureplateBlock(Sensitivity.EVERYTHING,
+	public static final RegistryObject<Block> WEATHERED_BLUE_HOLM_OAK_PRESSURER_PLATE = BLOCKS
+			.register("weathered_blue_holm_oak_pressure_plate", () -> new PresureplateBlock(Sensitivity.EVERYTHING,
 					BlockBehaviour.Properties.of(Material.WOOD).strength(5f, 7f)));
 
-	// very weatherd
-	public static final RegistryObject<Block> VERY_WEATHERD_BLUE_HOLM_OAK_PLANKS = BLOCKS.register(
-			"very_weatherd_blue_holm_oak_planks", () -> new Block(BlockBehaviour.Properties.of(Material.WOOD)));
+	// very weathered
+	public static final RegistryObject<Block> VERY_WEATHERED_BLUE_HOLM_OAK_PLANKS = BLOCKS.register(
+			"very_weathered_blue_holm_oak_planks", () -> new Block(BlockBehaviour.Properties.of(Material.WOOD)));
 
-	public static final RegistryObject<Block> VERY_WEATHERD_BLUE_HOLM_OAK_STAIR = BLOCKS.register(
-			"very_weatherd_blue_holm_oak_stairs",
+	public static final RegistryObject<Block> VERY_WEATHERED_BLUE_HOLM_OAK_STAIR = BLOCKS.register(
+			"very_weathered_blue_holm_oak_stairs",
 			() -> new StairBlock(() -> BlockInit.HOLM_OAK_LOG.get().defaultBlockState(),
 					BlockBehaviour.Properties.of(Material.WOOD).strength(5f, 7f)));
 
-	public static final RegistryObject<Block> VERY_WEATHERD_BLUE_HOLM_OAK_SLAB = BLOCKS.register(
-			"very_weatherd_blue_holm_oak_slab",
+	public static final RegistryObject<Block> VERY_WEATHERED_BLUE_HOLM_OAK_SLAB = BLOCKS.register(
+			"very_weathered_blue_holm_oak_slab",
 			() -> new SlabBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(5f, 7f)));
 
-	public static final RegistryObject<Block> VERY_WEATHERD_BLUE_HOLM_OAK_FENCE = BLOCKS.register(
-			"very_weatherd_blue_holm_oak_fence",
+	public static final RegistryObject<Block> VERY_WEATHERED_BLUE_HOLM_OAK_FENCE = BLOCKS.register(
+			"very_weathered_blue_holm_oak_fence",
 			() -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(5f, 7f)));
 
-	public static final RegistryObject<Block> VERY_WEATHERD_BLUE_HOLM_OAK_FENCE_GATE = BLOCKS.register(
-			"very_weatherd_blue_holm_oak_fence_gate",
+	public static final RegistryObject<Block> VERY_WEATHERED_BLUE_HOLM_OAK_FENCE_GATE = BLOCKS.register(
+			"very_weathered_blue_holm_oak_fence_gate",
 			() -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(5f, 7f)));
 
-	public static final RegistryObject<Block> VERY_WEATHERD_BLUE_HOLM_OAK_BUTTON = BLOCKS.register(
-			"very_weatherd_blue_holm_oak_button",
+	public static final RegistryObject<Block> VERY_WEATHERED_BLUE_HOLM_OAK_BUTTON = BLOCKS.register(
+			"very_weathered_blue_holm_oak_button",
 			() -> new ButtonBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(5f, 7f)));
 
-	public static final RegistryObject<Block> VERY_WEATHERD_BLUE_HOLM_OAK_TRAPDOOR = BLOCKS.register(
-			"very_weatherd_blue_holm_oak_trapdoor",
+	public static final RegistryObject<Block> VERY_WEATHERED_BLUE_HOLM_OAK_TRAPDOOR = BLOCKS.register(
+			"very_weathered_blue_holm_oak_trapdoor",
 			() -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(5f, 7f)));
 
-	public static final RegistryObject<Block> VERY_WEATHERD_BLUE_HOLM_OAK_PRESSURER_PLATE = BLOCKS
-			.register("very_weatherd_blue_holm_oak_pressure_plate", () -> new PresureplateBlock(Sensitivity.EVERYTHING,
+	public static final RegistryObject<Block> VERY_WEATHERED_BLUE_HOLM_OAK_PRESSURER_PLATE = BLOCKS
+			.register(
+					"very_weathered_blue_holm_oak_pressure_plate", () -> new PresureplateBlock(Sensitivity.EVERYTHING,
 					BlockBehaviour.Properties.of(Material.WOOD).strength(5f, 7f)));
 
 	// normal

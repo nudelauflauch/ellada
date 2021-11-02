@@ -1,10 +1,4 @@
 {
-	"replace": false,
-	"values": [
-		"ellada:holm_oak_fence",
-		"ellada:weatherd_blue_holm_oak_fence",
-		"ellada:very_weatherd_blue_holm_oak_fence",
-		"ellada:blue_holm_oak_fence",
-		"ellada:olive_fence"
-		]
+  "replace" : false,
+  "values" : [ "ellada:holm_oak_fence", "ellada:weathered_blue_holm_oak_fence", "ellada:very_weathered_blue_holm_oak_fence", "ellada:blue_holm_oak_fence", "ellada:olive_fence" ]
 }
