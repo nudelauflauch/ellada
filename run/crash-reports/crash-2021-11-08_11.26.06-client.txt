@@ -1,0 +1,162 @@
+---- Minecraft Crash Report ----
+// Ouch. That hurt :(
+
+Time: 08.11.21, 11:26
+Description: Rendering overlay
+
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.HashMap.resize(HashMap.java:704) ~[?:?] {}
+	at java.util.HashMap.putVal(HashMap.java:663) ~[?:?] {}
+	at java.util.HashMap.put(HashMap.java:612) ~[?:?] {}
+	at net.minecraft.client.resources.model.ModelBakery.lambda$uploadTextures$12(ModelBakery.java:256) ~[forge-1.17.1-37.0.84_mapped_official_1.17.1-recomp.jar%2375!:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.resources.model.ModelBakery$$Lambda$5179/0x17b0d070.accept(Unknown Source) ~[?:?] {}
+	at java.util.HashMap$KeySet.forEach(HashMap.java:1010) ~[?:?] {}
+	at net.minecraft.client.resources.model.ModelBakery.uploadTextures(ModelBakery.java:245) ~[forge-1.17.1-37.0.84_mapped_official_1.17.1-recomp.jar%2375!:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.resources.model.ModelManager.apply(ModelManager.java:69) ~[forge-1.17.1-37.0.84_mapped_official_1.17.1-recomp.jar%2375!:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.resources.model.ModelManager.apply(ModelManager.java:20) ~[forge-1.17.1-37.0.84_mapped_official_1.17.1-recomp.jar%2375!:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.packs.resources.SimplePreparableReloadListener.lambda$reload$1(SimplePreparableReloadListener.java:12) ~[forge-1.17.1-37.0.84_mapped_official_1.17.1-recomp.jar%2375!:?] {re:classloading}
+	at net.minecraft.server.packs.resources.SimplePreparableReloadListener$$Lambda$4875/0x25efbd88.accept(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478) ~[?:?] {}
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$new$3(SimpleReloadInstance.java:67) ~[forge-1.17.1-37.0.84_mapped_official_1.17.1-recomp.jar%2375!:?] {re:classloading}
+	at net.minecraft.server.packs.resources.SimpleReloadInstance$$Lambda$4855/0x25ec8888.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:90) ~[forge-1.17.1-37.0.84_mapped_official_1.17.1-recomp.jar%2375!:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$new$4(SimpleReloadInstance.java:66) ~[forge-1.17.1-37.0.84_mapped_official_1.17.1-recomp.jar%2375!:?] {re:classloading}
+	at net.minecraft.server.packs.resources.SimpleReloadInstance$$Lambda$4835/0x25ebd4d0.execute(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:568) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:710) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:610) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:722) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478) ~[?:?] {}
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$new$3(SimpleReloadInstance.java:67) ~[forge-1.17.1-37.0.84_mapped_official_1.17.1-recomp.jar%2375!:?] {re:classloading}
+	at net.minecraft.server.packs.resources.SimpleReloadInstance$$Lambda$4855/0x25ec8888.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:90) ~[forge-1.17.1-37.0.84_mapped_official_1.17.1-recomp.jar%2375!:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$new$4(SimpleReloadInstance.java:66) ~[forge-1.17.1-37.0.84_mapped_official_1.17.1-recomp.jar%2375!:?] {re:classloading}
+	at net.minecraft.server.packs.resources.SimpleReloadInstance$$Lambda$4835/0x25ebd4d0.execute(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:568) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:710) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) ~[?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at java.util.HashMap.resize(HashMap.java:704) ~[?:?] {}
+	at java.util.HashMap.putVal(HashMap.java:663) ~[?:?] {}
+	at java.util.HashMap.put(HashMap.java:612) ~[?:?] {}
+	at net.minecraft.client.resources.model.ModelBakery.lambda$uploadTextures$12(ModelBakery.java:256) ~[forge-1.17.1-37.0.84_mapped_official_1.17.1-recomp.jar%2375!:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.resources.model.ModelBakery$$Lambda$5179/0x17b0d070.accept(Unknown Source) ~[?:?] {}
+	at java.util.HashMap$KeySet.forEach(HashMap.java:1010) ~[?:?] {}
+	at net.minecraft.client.resources.model.ModelBakery.uploadTextures(ModelBakery.java:245) ~[forge-1.17.1-37.0.84_mapped_official_1.17.1-recomp.jar%2375!:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.resources.model.ModelManager.apply(ModelManager.java:69) ~[forge-1.17.1-37.0.84_mapped_official_1.17.1-recomp.jar%2375!:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.resources.model.ModelManager.apply(ModelManager.java:20) ~[forge-1.17.1-37.0.84_mapped_official_1.17.1-recomp.jar%2375!:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.packs.resources.SimplePreparableReloadListener.lambda$reload$1(SimplePreparableReloadListener.java:12) ~[forge-1.17.1-37.0.84_mapped_official_1.17.1-recomp.jar%2375!:?] {re:classloading}
+	at net.minecraft.server.packs.resources.SimplePreparableReloadListener$$Lambda$4875/0x25efbd88.accept(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478) ~[?:?] {}
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$new$3(SimpleReloadInstance.java:67) ~[forge-1.17.1-37.0.84_mapped_official_1.17.1-recomp.jar%2375!:?] {re:classloading}
+	at net.minecraft.server.packs.resources.SimpleReloadInstance$$Lambda$4855/0x25ec8888.run(Unknown Source) ~[?:?] {}
+-- Overlay render details --
+Details:
+	Overlay name: net.minecraft.client.gui.screens.LoadingOverlay
+Stacktrace:
+	at net.minecraft.client.renderer.GameRenderer.render(GameRenderer.java:877) ~[forge-1.17.1-37.0.84_mapped_official_1.17.1-recomp.jar%2375!:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1040) ~[forge-1.17.1-37.0.84_mapped_official_1.17.1-recomp.jar%2375!:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.run(Minecraft.java:659) ~[forge-1.17.1-37.0.84_mapped_official_1.17.1-recomp.jar%2375!:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:186) ~[forge-1.17.1-37.0.84_mapped_official_1.17.1-recomp.jar%2375!:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.ForgeClientUserdevLaunchHandler.lambda$launchService$0(ForgeClientUserdevLaunchHandler.java:38) ~[fmlloader-1.17.1-37.0.84.jar%233!:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-9.0.7.jar%238!:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-9.0.7.jar%238!:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-9.0.7.jar%238!:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-9.0.7.jar%238!:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-9.0.7.jar%238!:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-9.0.7.jar%238!:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-9.0.7.jar%238!:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:90) [bootstraplauncher-0.1.17.jar:?] {}
+
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: No
+	Packs: Default, Mod Resources
+
+-- System Details --
+Details:
+	Minecraft Version: 1.17.1
+	Minecraft Version ID: 1.17.1
+	Operating System: Windows 10 (x86) version 10.0
+	Java Version: 16.0.2, Eclipse Foundation
+	Java VM Version: OpenJDK Client VM (mixed mode), Eclipse Foundation
+	Memory: 97872 bytes (0 MiB) / 259522560 bytes (247 MiB) up to 259522560 bytes (247 MiB)
+	CPUs: 12
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
+	Identifier: Intel64 Family 6 Model 165 Stepping 2
+	Microarchitecture: unknown
+	Frequency (GHz): 2,59
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: NVIDIA GeForce RTX 2070 Super with Max-Q Design
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095,00
+	Graphics card #0 deviceId: 0x1ed1
+	Graphics card #0 versionInfo: DriverVersion=30.0.14.9613
+	Memory slot #0 capacity (MB): 8192,00
+	Memory slot #0 clockSpeed (GHz): 3,20
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 8192,00
+	Memory slot #1 clockSpeed (GHz): 3,20
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 27998,91
+	Virtual memory used (MB): 16641,44
+	Swap memory total (MB): 11776,00
+	Swap memory used (MB): 204,89
+	JVM Flags: 2 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -XX:+ShowCodeDetailsInExceptionMessages
+	Launched Version: MOD_DEV
+	Backend library: LWJGL version 3.2.2 SNAPSHOT
+	Backend API: NVIDIA GeForce RTX 2070 Super with Max-Q Design/PCIe/SSE2 GL version 3.2.0 NVIDIA 496.13, NVIDIA Corporation
+	Window size: 1920x1080
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Type: Client (map_client.txt)
+	Graphics mode: fancy
+	Resource Packs: 
+	Current Language: English (US)
+	CPU: 12x Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
+	ModLauncher: 9.0.7+91+master.8569cdf
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		 mixin PLUGINSERVICE 
+		 eventbus PLUGINSERVICE 
+		 object_holder_definalize PLUGINSERVICE 
+		 runtime_enum_extender PLUGINSERVICE 
+		 capability_token_subclass PLUGINSERVICE 
+		 capability_inject_definalize PLUGINSERVICE 
+		 accesstransformer PLUGINSERVICE 
+		 runtimedistcleaner PLUGINSERVICE 
+		 mixin TRANSFORMATIONSERVICE 
+		 fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		javafml@null
+	Mod List: 
+		forge-1.17.1-37.0.84_mapped_official_1.17.1-recomp|Minecraft                     |minecraft                     |1.17.1              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		main                                              |Ellada                        |ellada                        |0.0NONE             |DONE      |Manifest: NOSIGNATURE
+		                                                  |Forge                         |forge                         |37.0.84             |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: c047fe8d-ec44-4f9a-8422-f05d476264f6
+	FML: 37.0
+	Forge: net.minecraftforge:37.0.84

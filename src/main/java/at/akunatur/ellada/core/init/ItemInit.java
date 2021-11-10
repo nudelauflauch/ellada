@@ -109,7 +109,7 @@ public class ItemInit {
 			"slaked_elladanite_bricks_wall", () -> new BlockItem(BlockInit.SLAKED_ELLADANITE_BRICKS_WALL.get(),
 					new Item.Properties().tab(Ellada.ELLADA_TAB)));
 
-	// rest
+	// rest stone things
 	public static final RegistryObject<BlockItem> SLAKED_ELLADANITE_PILLAR = ITEMS.register("slaked_elladanite_pillar",
 			() -> new BlockItem(BlockInit.SLAKED_ELLADANITE_PILLAR.get(),
 					new Item.Properties().tab(Ellada.ELLADA_TAB)));
@@ -121,8 +121,8 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> PAINTED_COBBLED_ELLADANITE = ITEMS
 			.register("painted_cobbled_elladanite", () -> new BlockItem(BlockInit.PAINTED_COBBLED_ELLADANITE.get(),
 					new Item.Properties().tab(Ellada.ELLADA_TAB)));
+	
 	// doors
-
 	public static final RegistryObject<BlockItem> BLUE_HOLM_OAK_DOOR = ITEMS.register("blue_holm_oak_door",
 			() -> new BlockItem(BlockInit.BLUE_HOLM_OAK_DOOR.get(), new Item.Properties().tab(Ellada.ELLADA_TAB)));
 
@@ -166,20 +166,21 @@ public class ItemInit {
 			"weathered_blue_holm_oak_planks", () -> new BlockItem(BlockInit.WEATHERED_BLUE_HOLM_OAK_PLANKS.get(),
 					new Item.Properties().tab(Ellada.ELLADA_TAB)));
 
-	public static final RegistryObject<BlockItem> WEATHERED_BLUE_HOLM_OAK_STAIR = ITEMS
-			.register("weathered_blue_holm_oak_stairs", () -> new BlockItem(BlockInit.WEATHERED_BLUE_HOLM_OAK_STAIR.get(),
+	public static final RegistryObject<BlockItem> WEATHERED_BLUE_HOLM_OAK_STAIR = ITEMS.register(
+			"weathered_blue_holm_oak_stairs", () -> new BlockItem(BlockInit.WEATHERED_BLUE_HOLM_OAK_STAIR.get(),
 					new Item.Properties().tab(Ellada.ELLADA_TAB)));
 
 	public static final RegistryObject<BlockItem> WEATHERED_BLUE_HOLM_OAK_SLAB = ITEMS
 			.register("weathered_blue_holm_oak_slab", () -> new BlockItem(BlockInit.WEATHERED_BLUE_HOLM_OAK_SLAB.get(),
 					new Item.Properties().tab(Ellada.ELLADA_TAB)));
 
-	public static final RegistryObject<BlockItem> WEATHERED_BLUE_HOLM_OAK_FENCE = ITEMS
-			.register("weathered_blue_holm_oak_fence", () -> new BlockItem(BlockInit.WEATHERED_BLUE_HOLM_OAK_FENCE.get(),
+	public static final RegistryObject<BlockItem> WEATHERED_BLUE_HOLM_OAK_FENCE = ITEMS.register(
+			"weathered_blue_holm_oak_fence", () -> new BlockItem(BlockInit.WEATHERED_BLUE_HOLM_OAK_FENCE.get(),
 					new Item.Properties().tab(Ellada.ELLADA_TAB)));
 
 	public static final RegistryObject<BlockItem> WEATHERED_BLUE_HOLM_OAK_FENCE_GATE = ITEMS.register(
-			"weathered_blue_holm_oak_fence_gate", () -> new BlockItem(BlockInit.WEATHERED_BLUE_HOLM_OAK_FENCE_GATE.get(),
+			"weathered_blue_holm_oak_fence_gate",
+			() -> new BlockItem(BlockInit.WEATHERED_BLUE_HOLM_OAK_FENCE_GATE.get(),
 					new Item.Properties().tab(Ellada.ELLADA_TAB)));
 
 	public static final RegistryObject<BlockItem> WEATHERED_BLUE_HOLM_OAK_BUTTON = ITEMS.register(
@@ -202,7 +203,8 @@ public class ItemInit {
 					new Item.Properties().tab(Ellada.ELLADA_TAB)));
 
 	public static final RegistryObject<BlockItem> VERY_WEATHERED_BLUE_HOLM_OAK_STAIR = ITEMS.register(
-			"very_weathered_blue_holm_oak_stairs", () -> new BlockItem(BlockInit.VERY_WEATHERED_BLUE_HOLM_OAK_STAIR.get(),
+			"very_weathered_blue_holm_oak_stairs",
+			() -> new BlockItem(BlockInit.VERY_WEATHERED_BLUE_HOLM_OAK_STAIR.get(),
 					new Item.Properties().tab(Ellada.ELLADA_TAB)));
 
 	public static final RegistryObject<BlockItem> VERY_WEATHERED_BLUE_HOLM_OAK_SLAB = ITEMS.register(
@@ -210,7 +212,8 @@ public class ItemInit {
 					new Item.Properties().tab(Ellada.ELLADA_TAB)));
 
 	public static final RegistryObject<BlockItem> VERY_WEATHERED_BLUE_HOLM_OAK_FENCE = ITEMS.register(
-			"very_weathered_blue_holm_oak_fence", () -> new BlockItem(BlockInit.VERY_WEATHERED_BLUE_HOLM_OAK_FENCE.get(),
+			"very_weathered_blue_holm_oak_fence",
+			() -> new BlockItem(BlockInit.VERY_WEATHERED_BLUE_HOLM_OAK_FENCE.get(),
 					new Item.Properties().tab(Ellada.ELLADA_TAB)));
 
 	public static final RegistryObject<BlockItem> VERY_WEATHERED_BLUE_HOLM_OAK_FENCE_GATE = ITEMS.register(
@@ -226,12 +229,6 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> VERY_WEATHERED_BLUE_HOLM_OAK_TRAPDOOR = ITEMS.register(
 			"very_weathered_blue_holm_oak_trapdoor",
 			() -> new BlockItem(BlockInit.VERY_WEATHERED_BLUE_HOLM_OAK_TRAPDOOR.get(),
-					new Item.Properties().tab(Ellada.ELLADA_TAB)));
-
-	public static final RegistryObject<BlockItem> VERY_WEATHERED_BLUE_HOLM_OAK_PRESSURER_PLATE = ITEMS.register(
-			"very_weathered_blue_holm_oak_pressure_plate",
-			() -> new BlockItem(
-					BlockInit.VERY_WEATHERED_BLUE_HOLM_OAK_PRESSURER_PLATE.get(),
 					new Item.Properties().tab(Ellada.ELLADA_TAB)));
 
 	// holm oak
@@ -274,17 +271,11 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> HOLM_OAK_PLANKS = ITEMS.register("holm_oak_planks",
 			() -> new BlockItem(BlockInit.HOLM_OAK_PLANKS.get(), new Item.Properties().tab(Ellada.ELLADA_TAB)));
 
-	public static final RegistryObject<BlockItem> HOLM_OAK_SAPLING = ITEMS.register("holm_oak_sapling",
-			() -> new BlockItem(BlockInit.HOLM_OAK_SAPLING.get(), new Item.Properties().tab(Ellada.ELLADA_TAB)));
-
 	public static final RegistryObject<BlockItem> HOLM_OAK_TRAPDOOR = ITEMS.register("holm_oak_trapdoor",
 			() -> new BlockItem(BlockInit.HOLM_OAK_TRAPDOOR.get(), new Item.Properties().tab(Ellada.ELLADA_TAB)));
 
 	public static final RegistryObject<BlockItem> OLIVE_DOOR = ITEMS.register("olive_door",
 			() -> new BlockItem(BlockInit.OLIVE_DOOR.get(), new Item.Properties().tab(Ellada.ELLADA_TAB)));
-
-	public static final RegistryObject<BlockItem> OLIVE_LEAVES = ITEMS.register("olive_leaves",
-			() -> new BlockItem(BlockInit.OLIVE_LEAVES.get(), new Item.Properties().tab(Ellada.ELLADA_TAB)));
 
 	public static final RegistryObject<BlockItem> STRIPPED_OLIVE_LOG = ITEMS.register("stripped_olive_log",
 			() -> new BlockItem(BlockInit.STRIPPED_OLIVE_LOG.get(), new Item.Properties().tab(Ellada.ELLADA_TAB)));
@@ -319,10 +310,17 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> OLIVE_PRESSURE_PLATE = ITEMS.register("olive_pressure_plate",
 			() -> new BlockItem(BlockInit.OLIVE_PRESSURE_PLATE.get(), new Item.Properties().tab(Ellada.ELLADA_TAB)));
 
+	public static final RegistryObject<BlockItem> OLIVE_TRAPDOOR = ITEMS.register("olive_trapdoor",
+			() -> new BlockItem(BlockInit.OLIVE_TRAPDOOR.get(), new Item.Properties().tab(Ellada.ELLADA_TAB)));
+
+	// sapling
 	public static final RegistryObject<BlockItem> OLIVE_SAPLING = ITEMS.register("olive_sapling",
 			() -> new BlockItem(BlockInit.OLIVE_SAPLING.get(), new Item.Properties().tab(Ellada.ELLADA_TAB)));
 
-	public static final RegistryObject<BlockItem> OLIVE_TRAPDOOR = ITEMS.register("olive_trapdoor",
-			() -> new BlockItem(BlockInit.OLIVE_TRAPDOOR.get(), new Item.Properties().tab(Ellada.ELLADA_TAB)));
+	public static final RegistryObject<BlockItem> HOLM_OAK_SAPLING = ITEMS.register("holm_oak_sapling",
+			() -> new BlockItem(BlockInit.HOLM_OAK_SAPLING.get(), new Item.Properties().tab(Ellada.ELLADA_TAB)));
+
+	public static final RegistryObject<BlockItem> OLIVE_LEAVES = ITEMS.register("olive_leaves",
+			() -> new BlockItem(BlockInit.OLIVE_LEAVES.get(), new Item.Properties().tab(Ellada.ELLADA_TAB)));
 
 }

@@ -141,8 +141,8 @@ public class BlockInit {
 	public static final RegistryObject<Block> BLUE_HOLM_OAK_DOOR = BLOCKS.register("blue_holm_oak_door",
 			() -> new EDoorBlock(BlockBehaviour.Properties.of(Material.WOOD)));
 
-	public static final RegistryObject<Block> WEATHERED_BLUE_HOLM_OAK_DOOR = BLOCKS
-			.register("weathered_blue_holm_oak_door", () -> new EDoorBlock(BlockBehaviour.Properties.of(Material.WOOD)));
+	public static final RegistryObject<Block> WEATHERED_BLUE_HOLM_OAK_DOOR = BLOCKS.register(
+			"weathered_blue_holm_oak_door", () -> new EDoorBlock(BlockBehaviour.Properties.of(Material.WOOD)));
 
 	public static final RegistryObject<Block> VERY_WEATHERED_BLUE_HOLM_OAK_DOOR = BLOCKS.register(
 			"very_weathered_blue_holm_oak_door", () -> new EDoorBlock(BlockBehaviour.Properties.of(Material.WOOD)));
@@ -237,8 +237,7 @@ public class BlockInit {
 			() -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(5f, 7f)));
 
 	public static final RegistryObject<Block> VERY_WEATHERED_BLUE_HOLM_OAK_PRESSURER_PLATE = BLOCKS
-			.register(
-					"very_weathered_blue_holm_oak_pressure_plate", () -> new PresureplateBlock(Sensitivity.EVERYTHING,
+			.register("very_weathered_blue_holm_oak_pressure_plate", () -> new PresureplateBlock(Sensitivity.EVERYTHING,
 					BlockBehaviour.Properties.of(Material.WOOD).strength(5f, 7f)));
 
 	// normal
