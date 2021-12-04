@@ -1,6 +1,2 @@
-{
-  "parent" : "minecraft:block/pressure_plate_up",
-  "textures" : {
-    "texture" : "ellada:block/elladanite"
-  }
-}
+{"parent": "minecraft:block/pressure_plate_up","textures": {
+"texture": "ellada:block/elladanite"}}

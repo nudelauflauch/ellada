@@ -3,7 +3,7 @@ Specification-Title: ellada
 Specification-Vendor: nudlauflauch
 Specification-Version: 1
 Implementation-Title: ellada
-Implementation-Version: 0.3.1-alpha
+Implementation-Version: 0.5-alpha
 Implementation-Vendor: nudlauflauch
-Implementation-Timestamp: 2021-11-08T18:39:38+0100
+Implementation-Timestamp: 2021-12-04T11:01:27+0100
 

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "ellada:block/slaked_elladanite__brickbricks",
+   "top": "ellada:block/slaked_elladanite__brickbricks",
+  "side": "ellada:block/slaked_elladanite__brickbricks"}
+}

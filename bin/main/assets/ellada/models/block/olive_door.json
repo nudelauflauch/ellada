@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/door_bottom_rh",
   "textures": {
-    "all": "ellada:block/olive_door"
+    "top": "ellada:block/olive_door_top",
+   "bottom": "ellada:block/olive_door_bottom"
   }
 }

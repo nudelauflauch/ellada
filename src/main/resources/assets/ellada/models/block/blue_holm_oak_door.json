@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/door_bottom_rh",
   "textures": {
-    "all": "ellada:block/blue_holm_oak_door"
+    "top": "ellada:block/blue_holm_oak_door_top",
+   "bottom": "ellada:block/blue_holm_oak_door_bottom"
   }
 }

@@ -1,8 +1,7 @@
 {
-    "parent": "minecraft:block/slab_top",
-    "textures": {
-      "bottom": "ellada:block/elladanite",
-      "top": "ellada:block/elladanite",
-      "side": "ellada:block/elladanite"
-      }
-    }
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "ellada:block/elladanite",
+   "top": "ellada:block/elladanite",
+  "side": "ellada:block/elladanite"}
+}

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "/O/",
+        "/O/"
+    ],
+    "key": {
+        "/": {
+            "item": "minecraft:stick"
+        },
+        "O": {
+            "item": "ellada:weathered_blue_holm_oak_planks"
+        }
+    },
+    "result": {
+        "item": "ellada:weathered_blue_holm_oak_fence",
+        "count": 1
+    }
+    }

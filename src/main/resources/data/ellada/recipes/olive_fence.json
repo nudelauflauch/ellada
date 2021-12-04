@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "/O/",
+        "/O/"
+    ],
+    "key": {
+        "/": {
+            "item": "minecraft:stick"
+        },
+        "O": {
+            "item": "ellada:olive_planks"
+        }
+    },
+    "result": {
+        "item": "ellada:olive_fence",
+        "count": 1
+    }
+    }

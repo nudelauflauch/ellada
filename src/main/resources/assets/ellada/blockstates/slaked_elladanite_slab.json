@@ -1,14 +1,14 @@
 
-        {
-      "variants": {
-        "type=bottom": {
-          "model": "ellada:block/slaked_elladanite_slab"
-        },
-        "type=double": {
-          "model": "ellada:block/slaked_elladanite"
-        },
-        "type=top": {
-          "model": "ellada:block/slaked_elladanite_slab_top"
+          {
+        "variants": {
+          "type=bottom": {
+            "model": "ellada:block/slaked_elladanite_slab"
+          },
+          "type=double": {
+            "model": "ellada:block/slaked_elladanite"
+          },
+          "type=top": {
+            "model": "ellada:block/slaked_elladanite_slab_top"
+          }
         }
-      }
-    } 
+      } 

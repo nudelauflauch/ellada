@@ -1,0 +1,10 @@
+{
+  "replace" : false,
+  "values" : [ 
+  "ellada:blue_holm_oak_planks", 
+  "ellada:weathered_blue_holm_oak_planks", 
+  "ellada:very_weathered_blue_holm_oak_planks", 
+  "ellada:holm_oak_planks", 
+  "ellada:olive_planks" 
+  ]
+}

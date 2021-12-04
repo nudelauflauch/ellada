@@ -1,8 +1,7 @@
 {
-    "parent": "minecraft:block/stairs",
-    "textures": {
-        "bottom": "ellada:block/olive_planks",
-        "top": "ellada:block/olive_planks",
-        "side": "ellada:block/olive_planks"
-        }
-        }
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "ellada:block/olive_planks",
+   "top": "ellada:block/olive_planks",
+  "side": "ellada:block/olive_planks"}
+}

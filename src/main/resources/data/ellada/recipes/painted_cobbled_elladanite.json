@@ -1,0 +1,16 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "pattern" : [ "###", "#/#", "###" ],
+  "key" : {
+    "#" : {
+      "item" : "ellada:cobbled_elladanite"
+    },
+    "/" : {
+      "item" : "minecraft:white_dye"
+    }
+  },
+  "result" : {
+    "item" : "ellada:painted_cobbled_elladanite",
+    "count" : 8
+  }
+}

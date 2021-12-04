@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "ellada:block/very_weathered_blue_holm_oak_planks",
+   "top": "ellada:block/very_weathered_blue_holm_oak_planks",
+  "side": "ellada:block/very_weathered_blue_holm_oak_planks"}
+}

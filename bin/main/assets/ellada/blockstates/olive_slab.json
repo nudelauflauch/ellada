@@ -1,13 +1,14 @@
-{
-  "variants" : {
-    "type=bottom" : {
-      "model" : "ellada:block/olive_slab"
-    },
-    "type=double" : {
-      "model" : "ellada:block/olive_planks"
-    },
-    "type=top" : {
-      "model" : "ellada:block/olive_slab_top"
-    }
-  }
-}
+
+          {
+        "variants": {
+          "type=bottom": {
+            "model": "ellada:block/olive_slab"
+          },
+          "type=double": {
+            "model": "ellada:block/olive_planks"
+          },
+          "type=top": {
+            "model": "ellada:block/olive_slab_top"
+          }
+        }
+      } 

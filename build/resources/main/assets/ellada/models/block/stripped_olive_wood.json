@@ -1,6 +1,7 @@
 {
-  "parent" : "minecraft:block/cube_all",
+  "parent" : "minecraft:block/cube_column",
   "textures" : {
-    "all" : "ellada:block/stripped_olive_log"
+    "end" : "ellada:block/stripped_olive_log",
+    "side" : "ellada:block/stripped_olive_log"
   }
 }

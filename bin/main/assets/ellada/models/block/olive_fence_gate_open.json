@@ -1,6 +1,2 @@
-{
-        "parent": "minecraft:block/template_fence_gate_open",
-        "textures": {
-            "texture": "ellada:block/olive_planks"
-        }
-        }
+{"parent": "minecraft:block/template_fence_gate_open","textures": {
+"texture": "ellada:block/olive_planks"}}

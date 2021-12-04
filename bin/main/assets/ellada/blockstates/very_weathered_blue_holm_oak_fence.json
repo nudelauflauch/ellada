@@ -1,42 +1,42 @@
  {
-    "multipart" : [ {
-        "apply" : {
-        "model" : "ellada:block/very_weatherd_blue_holm_oak_fence_post"
-        }
-    }, {
-        "when" : {
-        "north" : "true"
-        },
-        "apply" : {
-        "model" : "ellada:block/very_weatherd_blue_holm_oak_fence_side",
-        "uvlock" : true
-        }
-    }, {
-        "when" : {
-        "east" : "true"
-        },
-        "apply" : {
-        "model" : "ellada:block/very_weatherd_blue_holm_oak_fence_side",
-        "y" : 90,
-        "uvlock" : true
-        }
-    }, {
-        "when" : {
-        "south" : "true"
-        },
-        "apply" : {
-        "model" : "ellada:block/very_weatherd_blue_holm_oak_fence_side",
-        "y" : 180,
-        "uvlock" : true
-        }
-    }, {
-        "when" : {
-        "west" : "true"
-        },
-        "apply" : {
-        "model" : "ellada:block/very_weatherd_blue_holm_oak_fence_side",
-        "y" : 270,
-        "uvlock" : true
-        }
-        } ]
-        }
+      "multipart" : [ {
+          "apply" : {
+          "model" : "ellada:block/very_weathered_blue_holm_oak_fence_post"
+          }
+      }, {
+          "when" : {
+          "north" : "true"
+          },
+          "apply" : {
+          "model" : "ellada:block/very_weathered_blue_holm_oak_fence_side",
+          "uvlock" : true
+          }
+      }, {
+          "when" : {
+          "east" : "true"
+          },
+          "apply" : {
+          "model" : "ellada:block/very_weathered_blue_holm_oak_fence_side",
+          "y" : 90,
+          "uvlock" : true
+          }
+      }, {
+          "when" : {
+          "south" : "true"
+          },
+          "apply" : {
+          "model" : "ellada:block/very_weathered_blue_holm_oak_fence_side",
+          "y" : 180,
+          "uvlock" : true
+          }
+      }, {
+          "when" : {
+          "west" : "true"
+          },
+          "apply" : {
+          "model" : "ellada:block/very_weathered_blue_holm_oak_fence_side",
+          "y" : 270,
+          "uvlock" : true
+          }
+          } ]
+          }

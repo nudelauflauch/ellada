@@ -1,6 +1,2 @@
-{
-    "parent": "minecraft:block/button_pressed",
-    "textures": {
-        "texture": "ellada:block/elladanite"
-    }
-    }
+{"parent": "minecraft:block/button_pressed","textures": {
+"texture": "ellada:block/elladanite"}}

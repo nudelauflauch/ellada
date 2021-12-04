@@ -11,9 +11,9 @@
   	"ellada:cobbled_elladanite_slab",
   	"ellada:cobbled_elladanite_wall",
   	"ellada:elladanite_bricks",
-  	"ellada:elladanite_bricks_stairs",
-  	"ellada:elladanite_bricks_slab",
-  	"ellada:elladanite_bricks_wall",
+  	"ellada:elladanite_brick_stairs",
+  	"ellada:elladanite_brick_slab",
+  	"ellada:elladanite_brick_wall",
   	"ellada:slaked_elladanite",
   	"ellada:slaked_elladanite_stairs",
   	"ellada:slaked_elladanite_slab",
@@ -21,11 +21,11 @@
   	"ellada:slaked_elladanite_pressure_plate",
   	"ellada:slaked_elladanite_button", 	
   	"ellada:slaked_elladanite_bricks",
-  	"ellada:slaked_elladanite_bricks_stairs",
-  	"ellada:slaked_elladanite_bricks_slab",
-  	"ellada:slaked_elladanite_bricks_wall",
+  	"ellada:slaked_elladanite_brick_stairs",
+  	"ellada:slaked_elladanite_brick_slab",
+  	"ellada:slaked_elladanite_brick_wall",
   	"ellada:slaked_elladanite_pillar",
-  	"ellada:chiseled_skalked_elladanite",
+  	"ellada:chiseled_slaked_elladanite",
   	"ellada:painted_cobbled_elladanite"
   	]
 }

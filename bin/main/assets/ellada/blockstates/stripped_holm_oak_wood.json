@@ -1,7 +1,16 @@
 {
-	"variants": {
-		"": {
-			"model": "ellada:block/stripped_holm_oak_wood"
-		}
-	}
+  "variants" : {
+    "axis=x" : {
+      "model" : "ellada:block/stripped_holm_oak_wood_horizontal",
+      "x" : 90,
+      "y" : 90
+    },
+    "axis=y" : {
+      "model" : "ellada:block/stripped_holm_oak_wood"
+    },
+    "axis=z" : {
+      "model" : "ellada:block/stripped_holm_oak_wood_horizontal",
+      "x" : 90
+    }
+  }
 }

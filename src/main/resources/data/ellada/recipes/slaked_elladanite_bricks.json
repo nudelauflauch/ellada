@@ -1,0 +1,13 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "pattern" : [ "##", "##" ],
+  "key" : {
+    "#" : {
+      "item" : "ellada:slaked_elladanite"
+    }
+  },
+  "result" : {
+    "item" : "ellada:slaked_elladanite_bricks",
+    "count" : 4
+  }
+}

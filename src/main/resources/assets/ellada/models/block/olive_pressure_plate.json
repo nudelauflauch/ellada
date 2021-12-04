@@ -1,6 +1,2 @@
-{
-  "parent" : "minecraft:block/pressure_plate_up",
-  "textures" : {
-    "texture" : "ellada:block/olive_planks"
-  }
-}
+{"parent": "minecraft:block/pressure_plate_up","textures": {
+"texture": "ellada:block/olive_planks"}}

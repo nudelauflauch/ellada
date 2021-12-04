@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "ellada:olive_planks"
+        }
+    },
+    "result": {
+        "item": "ellada:olive_door",
+        "count": 1
+    }
+    }

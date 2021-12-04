@@ -1,0 +1,14 @@
+
+          {
+        "variants": {
+          "type=bottom": {
+            "model": "ellada:block/elladanite_brick_slab"
+          },
+          "type=double": {
+            "model": "ellada:block/elladanite_brick_planks"
+          },
+          "type=top": {
+            "model": "ellada:block/elladanite_brick_slab_top"
+          }
+        }
+      } 

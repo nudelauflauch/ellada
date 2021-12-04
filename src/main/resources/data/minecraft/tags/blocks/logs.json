@@ -1,0 +1,13 @@
+{
+  "replace" : false,
+  "values" : [ 
+  	"ellada:holm_oak_log",
+  	"ellada:olive_log",
+  	"ellada:stripped_holm_oak_log",
+  	"ellada:stripped_olive_log",
+  	"ellada:holm_oak_wood",
+  	"ellada:olive_wood",
+  	"ellada:stripped_holm_oak_wood",
+  	"ellada:stripped_olive_wood"
+   ]
+}

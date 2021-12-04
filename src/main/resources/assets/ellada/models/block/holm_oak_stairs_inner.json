@@ -1,8 +1,7 @@
 {
-    "parent": "minecraft:block/inner_stairs",
-    "textures": {
-        "bottom": "ellada:block/holm_oak_planks",
-        "top": "ellada:block/holm_oak_planks",
-        "side": "ellada:block/holm_oak_planks"
-        }
-        }
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "ellada:block/holm_oak_planks",
+   "top": "ellada:block/holm_oak_planks",
+  "side": "ellada:block/holm_oak_planks"}
+}

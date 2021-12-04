@@ -1,6 +1,6 @@
 {
-  "variants" : {
-    "face=ceiling,facing=east,powered=false" : {
+    "variants" : {
+        "face=ceiling,facing=east,powered=false" : {
       "model" : "ellada:block/blue_holm_oak_button",
       "y" : 270,
       "x" : 180
@@ -114,5 +114,5 @@
       "x" : 90,
       "uvlock" : true
     }
-  }
-}
+    }
+    }

@@ -1,8 +1,7 @@
 {
-    "parent": "minecraft:block/inner_stairs",
-    "textures": {
-        "bottom": "ellada:block/elladanite",
-        "top": "ellada:block/elladanite",
-        "side": "ellada:block/elladanite"
-        }
-        }
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "ellada:block/elladanite",
+   "top": "ellada:block/elladanite",
+  "side": "ellada:block/elladanite"}
+}

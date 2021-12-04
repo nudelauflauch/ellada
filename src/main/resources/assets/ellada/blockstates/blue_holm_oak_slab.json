@@ -1,13 +1,14 @@
-{
-  "variants" : {
-    "type=bottom" : {
-      "model" : "ellada:block/blue_holm_oak_slab"
-    },
-    "type=double" : {
-      "model" : "ellada:block/blue_holm_oak_planks"
-    },
-    "type=top" : {
-      "model" : "ellada:block/blue_holm_oak_slab_top"
-    }
-  }
-}
+
+          {
+        "variants": {
+          "type=bottom": {
+            "model": "ellada:block/blue_holm_oak_slab"
+          },
+          "type=double": {
+            "model": "ellada:block/blue_holm_oak_planks"
+          },
+          "type=top": {
+            "model": "ellada:block/blue_holm_oak_slab_top"
+          }
+        }
+      } 

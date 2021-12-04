@@ -1,5 +1,5 @@
-Java Launcher: C:\Users\felix\.gradle\jdks\jdk-16.0.1+9\bin\java.exe
-Arguments: '--inJar, C:\Users\felix\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.17.1-37.0.103\forge-1.17.1-37.0.103-injected.jar, --outJar, C:\Users\felix\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.17.1-37.0.103_mapped_official_1.17.1\forge-1.17.1-37.0.103_mapped_official_1.17.1.jar, --logFile, accesstransform.log, --atFile, C:\dev\minecraft\ellada\build\_atJar_4\parent_at.cfg'
+Java Launcher: C:\Program Files\Eclipse Foundation\jdk-16.0.2.7-hotspot\bin\java.exe
+Arguments: '--inJar, C:\dev\minecraft\ellada\build\fg_cache\net\minecraftforge\forge\1.17.1-37.0.116\forge-1.17.1-37.0.116-injected.jar, --outJar, C:\dev\minecraft\ellada\build\fg_cache\net\minecraftforge\forge\1.17.1-37.0.116_mapped_official_1.17.1\forge-1.17.1-37.0.116_mapped_official_1.17.1.jar, --logFile, accesstransform.log, --atFile, C:\dev\minecraft\ellada\src\main\resources\META-INF\accesstransformer.cfg, --atFile, C:\dev\minecraft\ellada\build\_atJar_4\parent_at.cfg'
 Classpath:
  - C:\Users\felix\.gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\accesstransformers\3.0.1\accesstransformers-3.0.1-fatjar.jar
 Working directory: C:\dev\minecraft\ellada\build\_atJar_4

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_rh",
+  "textures": {
+    "top": "ellada:block/weathered_blue_holm_oak_door_top",
+   "bottom": "ellada:block/weathered_blue_holm_oak_door_bottom"
+  }
+}

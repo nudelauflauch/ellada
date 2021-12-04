@@ -1,5 +1,5 @@
-Java Launcher: C:\Users\felix\.gradle\jdks\jdk-16.0.1+9\bin\java.exe
-Arguments: '--clean, C:\Users\felix\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\joined\1.17.1-20210706.113038\joined-1.17.1-20210706.113038-srg.jar, --output, C:\Users\felix\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.17.1-37.0.103\forge-1.17.1-37.0.103-binpatched.jar, --apply, C:\Users\felix\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.17.1-37.0.103\forge-1.17.1-37.0.103-binpatches.lzma'
+Java Launcher: C:\Program Files\Eclipse Foundation\jdk-16.0.2.7-hotspot\bin\java.exe
+Arguments: '--clean, C:\Users\felix\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\joined\1.17.1-20210706.113038\joined-1.17.1-20210706.113038-srg.jar, --output, C:\dev\minecraft\ellada\build\fg_cache\net\minecraftforge\forge\1.17.1-37.0.116\forge-1.17.1-37.0.116-binpatched.jar, --apply, C:\dev\minecraft\ellada\build\fg_cache\net\minecraftforge\forge\1.17.1-37.0.116\forge-1.17.1-37.0.116-binpatches.lzma'
 Classpath:
  - C:\Users\felix\.gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\binarypatcher\1.0.12\binarypatcher-1.0.12-fatjar.jar
 Working directory: C:\dev\minecraft\ellada\build\_applyBinpatches_2
@@ -7,11 +7,11 @@ Main class: net.minecraftforge.binarypatcher.ConsoleTool
 ====================================
 Applying: 
   Clean:     C:\Users\felix\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\joined\1.17.1-20210706.113038\joined-1.17.1-20210706.113038-srg.jar
-  Output:    C:\Users\felix\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.17.1-37.0.103\forge-1.17.1-37.0.103-binpatched.jar
+  Output:    C:\dev\minecraft\ellada\build\fg_cache\net\minecraftforge\forge\1.17.1-37.0.116\forge-1.17.1-37.0.116-binpatched.jar
   KeepData:  false
   Unpatched: false
-  Patches:   C:\Users\felix\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.17.1-37.0.103\forge-1.17.1-37.0.103-binpatches.lzma
-Loading patches file: C:\Users\felix\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.17.1-37.0.103\forge-1.17.1-37.0.103-binpatches.lzma
+  Patches:   C:\dev\minecraft\ellada\build\fg_cache\net\minecraftforge\forge\1.17.1-37.0.116\forge-1.17.1-37.0.116-binpatches.lzma
+Loading patches file: C:\dev\minecraft\ellada\build\fg_cache\net\minecraftforge\forge\1.17.1-37.0.116\forge-1.17.1-37.0.116-binpatches.lzma
   Reading patch com.mojang.blaze3d.pipeline.RenderTarget.binpatch
     Checksum: ccc0a558 Exists: true
   Reading patch com.mojang.blaze3d.platform.GlStateManager$BlendState.binpatch
@@ -226,12 +226,6 @@ Loading patches file: C:\Users\felix\.gradle\caches\forge_gradle\minecraft_user_
     Checksum: c4f75322 Exists: true
   Reading patch net.minecraft.client.gui.screens.DeathScreen.binpatch
     Checksum: 9f93236a Exists: true
-  Reading patch net.minecraft.client.gui.screens.LanguageSelectScreen$LanguageSelectionList$Entry.binpatch
-    Checksum: a8aeda67 Exists: true
-  Reading patch net.minecraft.client.gui.screens.LanguageSelectScreen$LanguageSelectionList.binpatch
-    Checksum: d0d77aa1 Exists: true
-  Reading patch net.minecraft.client.gui.screens.LanguageSelectScreen.binpatch
-    Checksum: 3cb8c8c9 Exists: true
   Reading patch net.minecraft.client.gui.screens.LoadingOverlay$LogoTexture.binpatch
     Checksum: 7cd26ef9 Exists: true
   Reading patch net.minecraft.client.gui.screens.LoadingOverlay.binpatch
@@ -636,8 +630,6 @@ Loading patches file: C:\Users\felix\.gradle\caches\forge_gradle\minecraft_user_
     Checksum: 308fd5b4 Exists: true
   Reading patch net.minecraft.client.resources.language.LanguageInfo.binpatch
     Checksum: b3bbe98e Exists: true
-  Reading patch net.minecraft.client.resources.language.LanguageManager.binpatch
-    Checksum: 9be8139c Exists: true
   Reading patch net.minecraft.client.resources.model.BakedModel.binpatch
     Checksum: fd8a5c74 Exists: true
   Reading patch net.minecraft.client.resources.model.ModelBakery$BlockStateDefinitionException.binpatch
@@ -666,10 +658,6 @@ Loading patches file: C:\Users\felix\.gradle\caches\forge_gradle\minecraft_user_
     Checksum: bf7657a7 Exists: true
   Reading patch net.minecraft.client.resources.model.WeightedBakedModel.binpatch
     Checksum: 80b38fcc Exists: true
-  Reading patch net.minecraft.client.searchtree.SearchRegistry$Key.binpatch
-    Checksum: 4da9d10c Exists: true
-  Reading patch net.minecraft.client.searchtree.SearchRegistry.binpatch
-    Checksum: 2392ed65 Exists: true
   Reading patch net.minecraft.client.server.IntegratedServer.binpatch
     Checksum: 25a9ccd Exists: true
   Reading patch net.minecraft.client.sounds.SoundEngine.binpatch
@@ -2804,7 +2792,6 @@ Processing: C:\Users\felix\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\jo
   Patching net/minecraft/world/level/entity/TransientEntitySectionManager$Callback 1/1
   Patching net/minecraft/client/gui/screens/DeathScreen 1/1
   Patching net/minecraft/client/gui/screens/LoadingOverlay 1/1
-  Patching net/minecraft/client/gui/screens/LanguageSelectScreen 1/1
   Patching net/minecraft/client/gui/screens/OptionsScreen 1/1
   Patching net/minecraft/client/gui/screens/advancements/AdvancementTabType 1/1
   Patching net/minecraft/client/gui/screens/advancements/AdvancementTab 1/1
@@ -2946,7 +2933,6 @@ Processing: C:\Users\felix\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\jo
   Patching net/minecraft/client/resources/language/I18n 1/1
   Patching net/minecraft/client/resources/language/LanguageInfo 1/1
   Patching net/minecraft/client/renderer/texture/TextureAtlasSprite 1/1
-  Patching net/minecraft/client/resources/language/LanguageManager 1/1
   Patching net/minecraft/client/resources/language/ClientLanguage 1/1
   Patching net/minecraft/client/resources/model/BakedModel 1/1
   Patching net/minecraft/client/resources/model/ModelManager 1/1
@@ -2961,7 +2947,6 @@ Processing: C:\Users\felix\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\jo
   Patching net/minecraft/client/resources/model/MultiPartBakedModel 1/1
   Patching net/minecraft/client/renderer/texture/TextureAtlas 1/1
   Patching net/minecraft/server/level/ServerChunkCache$MainThreadExecutor 1/1
-  Patching net/minecraft/client/searchtree/SearchRegistry 1/1
   Patching net/minecraft/core/RegistryAccess$RegistryHolder 1/1
   Patching net/minecraft/client/server/IntegratedServer 1/1
   Patching net/minecraft/world/level/block/TrapDoorBlock$1 1/1
@@ -3066,7 +3051,6 @@ Processing: C:\Users\felix\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\jo
   Patching net/minecraft/world/level/chunk/ChunkStatus$SimpleGenerationTask 1/1
   Patching net/minecraft/world/level/chunk/ChunkStatus$ChunkType 1/1
   Patching net/minecraft/world/level/chunk/ChunkStatus$LoadingTask 1/1
-  Patching net/minecraft/client/searchtree/SearchRegistry$Key 1/1
   Patching net/minecraft/client/renderer/block/ModelBlockRenderer$AmbientOcclusionFace 1/1
   Patching net/minecraft/client/renderer/block/ModelBlockRenderer$AmbientVertexRemap 1/1
   Patching net/minecraft/client/renderer/block/ModelBlockRenderer$SizeInfo 1/1
@@ -3178,7 +3162,6 @@ Processing: C:\Users\felix\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\jo
   Patching net/minecraft/network/syncher/EntityDataSerializers$8 1/1
   Patching net/minecraft/world/item/enchantment/EnchantmentCategory$6 1/1
   Patching net/minecraft/world/level/block/StairBlock$1 1/1
-  Patching net/minecraft/client/gui/screens/LanguageSelectScreen$LanguageSelectionList 1/1
   Patching net/minecraft/world/food/FoodProperties$Builder 1/1
   Patching net/minecraft/client/resources/model/SimpleBakedModel$Builder 1/1
   Patching net/minecraft/world/entity/animal/Wolf$WolfAvoidEntityGoal 1/1
@@ -3282,7 +3265,6 @@ Processing: C:\Users\felix\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\jo
   Patching net/minecraft/world/item/CreativeModeTab$5 1/1
   Patching net/minecraft/world/level/levelgen/structure/StructureStart$1 1/1
   Patching net/minecraft/world/level/block/Block$2 1/1
-  Patching net/minecraft/client/gui/screens/LanguageSelectScreen$LanguageSelectionList$Entry 1/1
   Patching net/minecraft/client/gui/screens/controls/ControlList$KeyEntry$1 1/1
   Patching net/minecraft/client/gui/screens/controls/ControlList$KeyEntry$2 1/1
   Patching net/minecraft/nbt/StringTag$1 1/1
