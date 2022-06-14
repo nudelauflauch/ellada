@@ -5,26 +5,30 @@ import java.util.Random;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.block.FenceBlock;
-import net.minecraft.world.level.block.WeatheringCopper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class WeatheringFence extends FenceBlock implements WeatheringBlock {
 
-	private final WeatheringBlock.WeatherState weatherState;
+	private WeatheringBlock.WeatherState weatherState;
 
-	public WeatheringFence(WeatheringBlock.WeatherState block, BlockBehaviour.Properties proberties) {
+	public WeatheringFence(WeatheringBlock.WeatherState block,
+			BlockBehaviour.Properties proberties) {
 		super(proberties);
 		this.weatherState = block;
 	}
 
 	@Override
-	public void tick(BlockState block_state, ServerLevel server_level, BlockPos pos, Random random) {
-		this.onRandomTick(block_state, server_level, pos, random);
+	public void randomTick(BlockState pState, ServerLevel pLevel, BlockPos pPos,
+			Random pRandom) {
+		if (isRandomlyTicking(pState)) {
+			this.weatherState = this.onRandomTick(pState, pLevel, pPos, pRandom, weatherState);
+		}
 	}
 
-	public boolean isRandomlyTicking(BlockState block_state) {
-		return WeatheringCopper.getNext(block_state.getBlock()).isPresent();
+	@Override
+	public boolean isRandomlyTicking(BlockState pState) {
+		return WeatheringBlock.WeatherState.UNAFFECTED != this.weatherState;
 	}
 
 	public WeatheringBlock.WeatherState getAge() {

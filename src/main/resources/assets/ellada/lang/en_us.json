@@ -71,7 +71,6 @@
   "block.ellada.holm_oak_planks" : "Holm Oak Planks",
   "block.ellada.holm_oak_trapdoor" : "Holm Oak Trapdoor",
   "block.ellada.olive_door" : "Olive Door",
-  "block.ellada.olive_door" : "Olive Door",
   "block.ellada.olive_wood" : "Olive Wood",
   "block.ellada.olive_planks" : "Olive Planks",
   "block.ellada.olive_stairs" : "Olive Stairs",
@@ -89,5 +88,5 @@
   "block.ellada.holm_oak_sapling" : "Holm Oak Sapling",
   "block.ellada.olive_leaves" : "Olive Leaves",
   "item.ellada.olive": "Olive",
-  "itemGroup.ellada" : "Ellada Creative Tab"
+  "itemGroup.ellada_tab" : "Ellada Creative Tab"
 }

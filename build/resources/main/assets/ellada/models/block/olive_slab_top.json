@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "ellada:block/olive_planks",
-   "top": "ellada:block/olive_planks",
-  "side": "ellada:block/olive_planks"}
-}

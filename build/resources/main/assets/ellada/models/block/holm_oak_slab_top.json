@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "ellada:block/holm_oak_planks",
-   "top": "ellada:block/holm_oak_planks",
-  "side": "ellada:block/holm_oak_planks"}
-}

@@ -1,9 +1,0 @@
-{
-  "replace" : false,
-  "values" : [ 
-  "ellada:cobbled_elladanite_wall", 
-  "ellada:elladanite_brick_wall", 
-  "ellada:slaked_elladanite_wall", 
-  "ellada:slaked_elladanite_brick_wall"
-  ]
-}

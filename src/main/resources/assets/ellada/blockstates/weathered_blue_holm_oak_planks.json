@@ -1,7 +1,7 @@
 {
 	"variants": {
 		"": {
-			"model": "ellada:block/weatherd_blue_holm_oak_planks"
+			"model": "ellada:block/weathered_blue_holm_oak_planks"
 		}
 	}
 }

@@ -1,8 +1,5 @@
 package at.akunatur.ellada;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import at.akunatur.ellada.core.init.BlockInit;
 import at.akunatur.ellada.core.init.EntityInit;
 import at.akunatur.ellada.core.init.ItemInit;
@@ -10,7 +7,6 @@ import at.akunatur.ellada.util.ChangeMap;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -23,16 +19,11 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 @Mod(Ellada.MOD_ID)
 public class Ellada {
 	public static final String MOD_ID = "ellada";
-	public static final Logger LOGGER = LogManager.getLogger();
 
 	IEventBus forgeBus = MinecraftForge.EVENT_BUS;
 
-	public static final CreativeModeTab ELLADA_TAB = new CreativeModeTab(MOD_ID) {
-		@Override
-		public ItemStack makeIcon() {
-			return ItemInit.BLUE_HOLM_OAK_PLANKS.get().getDefaultInstance();
-		}
-	};
+	public static final CreativeModeTab ELLADA_TAB = new ElladaTab("ellada_tab");
+
 
 	public Ellada() {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -49,9 +40,9 @@ public class Ellada {
 	}
 
 	private void setup(final FMLCommonSetupEvent event) {
-		ComposterBlock.COMPOSTABLES.put(ItemInit.HOLM_OAK_SAPLING.get(), 0.3f);
+//		ComposterBlock.COMPOSTABLES.put(ItemInit.HOLM_OAK_SAPLING.get(), 0.3f);
 		ComposterBlock.COMPOSTABLES.put(ItemInit.HOLM_OAK_LEAVE.get(), 0.3f);
-		ComposterBlock.COMPOSTABLES.put(ItemInit.OLIVE_SAPLING.get(), 0.3f);
+//		ComposterBlock.COMPOSTABLES.put(ItemInit.OLIVE_SAPLING.get(), 0.3f);
 		ComposterBlock.COMPOSTABLES.put(ItemInit.OLIVE_LEAVES.get(), 0.3f);
 
 	}
@@ -60,8 +51,8 @@ public class Ellada {
 		ItemBlockRenderTypes.setRenderLayer(BlockInit.DRY_BUSH.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(BlockInit.DRY_SAPLING.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(BlockInit.DRY_GRASS.get(), RenderType.cutout());
-		ItemBlockRenderTypes.setRenderLayer(BlockInit.HOLM_OAK_SAPLING.get(), RenderType.cutout());
-		ItemBlockRenderTypes.setRenderLayer(BlockInit.OLIVE_SAPLING.get(), RenderType.cutout());
+//		ItemBlockRenderTypes.setRenderLayer(BlockInit.HOLM_OAK_SAPLING.get(), RenderType.cutout());
+//		ItemBlockRenderTypes.setRenderLayer(BlockInit.OLIVE_SAPLING.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(BlockInit.HOLM_OAK_LEAVES.get(), RenderType.translucent());
 		ItemBlockRenderTypes.setRenderLayer(BlockInit.DRY_SAPLING.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(BlockInit.OLIVE_LEAVES.get(), RenderType.translucent());
