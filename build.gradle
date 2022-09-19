@@ -14,15 +14,15 @@ apply plugin: 'org.parchmentmc.librarian.forgegradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '0.5-alpha'
+version = '0.6.1-alpha'
 group = 'at.akunatur.ellada' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'ellada'
 
-sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '17'
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
 minecraft {
-    mappings channel: 'parchment', version: '2022.06.05-1.18.2'
+    mappings channel: 'parchment', version: '2022.09.04-1.18.2'
     
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
     
@@ -98,7 +98,7 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.18.2-40.1.51'
+    minecraft 'net.minecraftforge:forge:1.18.2-40.1.80'
     
     // compile against the JEI API but do not include it at runtime
 	  //compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api")
