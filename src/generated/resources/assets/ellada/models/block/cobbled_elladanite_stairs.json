@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "ellada:block/cobbled_elladanite",
+    "side": "ellada:block/cobbled_elladanite",
+    "top": "ellada:block/cobbled_elladanite"
+  }
+}

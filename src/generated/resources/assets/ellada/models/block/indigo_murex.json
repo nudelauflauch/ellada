@@ -1,0 +1,6 @@
+{
+  "parent": "ellada:block/indigo_murex_parent",
+  "textures": {
+    "texture": "ellada:block/indigo_murex"
+  }
+}

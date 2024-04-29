@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ellada:block/cobbled_elladanite_slab"
+    },
+    "type=double": {
+      "model": "ellada:block/cobbled_elladanite"
+    },
+    "type=top": {
+      "model": "ellada:block/cobbled_elladanite_slab_top"
+    }
+  }
+}

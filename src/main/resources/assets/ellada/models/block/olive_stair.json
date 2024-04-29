@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "ellada:block/olive"
-   "top": "ellada:block/olive"
-  "side": "ellada:block/olive"}
-}

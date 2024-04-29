@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "ellada:block/slaked_elladanite_pillar_top",
+    "side": "ellada:block/slaked_elladanite_pillar"
+  }
+}

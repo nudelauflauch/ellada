@@ -1,0 +1,9 @@
+// 1.20.1	2024-04-23T14:38:32.1887895	Block Tags
+6b6b3faf19dc575046f31519c1d90ee782d8346c data/minecraft/tags/blocks/fences.json
+0958880181b6ec2fb33a305c728e0b6f49141e5e data/minecraft/tags/blocks/fence_gates.json
+57c903347ff88e43bad584364e15a2b318d656bc data/minecraft/tags/blocks/leaves.json
+c484ba428c89fd0a27f7cd60df4b907b33bb72ed data/minecraft/tags/blocks/logs_that_burn.json
+8fdc9010e53e03ff46da70762c103fe0cac72860 data/minecraft/tags/blocks/mineable/axe.json
+b8f98b497636f833ba6be5ce775b8a71aa517ffe data/minecraft/tags/blocks/mineable/pickaxe.json
+11ff844a194cf750a40bc1cd3a4a239f226862a5 data/minecraft/tags/blocks/planks.json
+98c46ab59ce550c9205239245484945d1de0fc27 data/minecraft/tags/blocks/walls.json

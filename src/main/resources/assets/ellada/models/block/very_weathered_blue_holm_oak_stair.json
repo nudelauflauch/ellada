@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "ellada:block/very_weathered_blue_holm_oak"
-   "top": "ellada:block/very_weathered_blue_holm_oak"
-  "side": "ellada:block/very_weathered_blue_holm_oak"}
-}

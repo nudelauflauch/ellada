@@ -1,7 +1,8 @@
 {
     "pack": {
-        "description": "ellada",
-        "pack_format": 7, 
-        "_comment": "for ellada"
+        "description": {
+            "text": "${mod_id} resources"
+        },
+        "pack_format": 15
     }
 }

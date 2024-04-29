@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "ellada:blue_oak_planks"
+    }
+  ],
+  "result": {
+    "item": "ellada:blue_oak_button"
+  }
+}

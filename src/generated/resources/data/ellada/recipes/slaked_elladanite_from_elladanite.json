@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "block.ellada.slaked_elladanite",
+  "ingredient": {
+    "item": "ellada:elladanite"
+  },
+  "result": "ellada:slaked_elladanite"
+}

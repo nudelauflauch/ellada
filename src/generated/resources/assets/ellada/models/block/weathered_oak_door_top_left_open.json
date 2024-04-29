@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_left_open",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "ellada:block/weathered_oak_door_lower",
+    "top": "ellada:block/weathered_oak_door_upper"
+  }
+}

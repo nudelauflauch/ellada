@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "ellada:block/elladanite",
-   "top": "ellada:block/elladanite",
-  "side": "ellada:block/elladanite"}
-}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ellada:block/slaked_elladanite_pillar_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ellada:block/slaked_elladanite_pillar"
+    },
+    "axis=z": {
+      "model": "ellada:block/slaked_elladanite_pillar_horizontal",
+      "x": 90
+    }
+  }
+}

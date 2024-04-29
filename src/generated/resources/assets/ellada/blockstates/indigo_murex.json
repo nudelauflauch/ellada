@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "ellada:block/indigo_murex",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "ellada:block/indigo_murex"
+    },
+    "facing=south": {
+      "model": "ellada:block/indigo_murex",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ellada:block/indigo_murex",
+      "y": 270
+    }
+  }
+}

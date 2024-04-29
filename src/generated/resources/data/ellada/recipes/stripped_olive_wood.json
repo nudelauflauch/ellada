@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wood",
+  "ingredients": [
+    {
+      "item": "ellada:stripped_olive_log"
+    },
+    {
+      "item": "ellada:stripped_olive_log"
+    },
+    {
+      "item": "ellada:stripped_olive_log"
+    },
+    {
+      "item": "ellada:stripped_olive_log"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "ellada:stripped_olive_wood"
+  }
+}

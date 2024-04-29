@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "ellada:stripped_holm_oak_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "ellada:holm_oak_planks"
+  }
+}

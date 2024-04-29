@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ellada:block/weathered_oak_slab"
+    },
+    "type=double": {
+      "model": "ellada:block/weathered_oak_planks"
+    },
+    "type=top": {
+      "model": "ellada:block/weathered_oak_slab_top"
+    }
+  }
+}

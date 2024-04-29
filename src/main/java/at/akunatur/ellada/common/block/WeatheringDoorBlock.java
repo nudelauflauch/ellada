@@ -1,35 +1,33 @@
 package at.akunatur.ellada.common.block;
 
-import java.util.Random;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.DoorBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 
-public class WeatheringDoorBlock extends DoorBlock implements WeatheringBlock {
+public class WeatheringDoorBlock extends DoorBlock implements WeatheringHolmDoor {
 
-	private WeatheringBlock.WeatherState weatherState;
+	private WeatheringState weatherState;
 
-	public WeatheringDoorBlock(WeatheringBlock.WeatherState weatherState,
-			Properties p_52737_) {
-		super(p_52737_);
+	public WeatheringDoorBlock(WeatheringState weatherState, BlockBehaviour.Properties pProperties) {
+		super(pProperties, BlockSetType.OAK);
 		this.weatherState = weatherState;
 	}
+
 	@Override
-	public void randomTick(BlockState pState, ServerLevel pLevel, BlockPos pPos,
-			Random pRandom) {
-		if (pState.getValue(HALF) == DoubleBlockHalf.LOWER
-				&& isRandomlyTicking(pState)) {
-			this.weatherState = this.onRandomTick(pState, pLevel, pPos, pRandom, weatherState);
-		}
+	public void randomTick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom) {
+		this.onRandomTick(pState,pLevel,pPos,pRandom);
 	}
 
 	public boolean isRandomlyTicking(BlockState block_state) {
-		return WeatheringBlock.WeatherState.UNAFFECTED != this.weatherState;
+		return WeatheringState.UNAFFECTED != this.weatherState && block_state.getValue(DoorBlock.HALF) == DoubleBlockHalf.LOWER;
 	}
-	public WeatheringBlock.WeatherState getAge() {
+
+	public WeatheringState getAge() {
 		return this.weatherState;
 	}
 }

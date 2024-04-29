@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "ellada:block/weathered_oak_planks"
+  }
+}

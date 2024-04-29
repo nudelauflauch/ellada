@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "ellada:block/weathered_oak_pressure_plate"
+    },
+    "powered=true": {
+      "model": "ellada:block/weathered_oak_pressure_plate_down"
+    }
+  }
+}

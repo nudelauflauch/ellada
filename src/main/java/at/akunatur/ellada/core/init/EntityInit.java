@@ -6,7 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class EntityInit {
-	public static final DeferredRegister<EntityType<?>> ENITIES = DeferredRegister.create(ForgeRegistries.ENTITIES,
+	public static final DeferredRegister<EntityType<?>> ENITIES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES,
 			Ellada.MOD_ID);
 
 //	public static final RegistryObject<EntityType<HolmOakEntity>> HOLM_OAK_ENTITY = ENITIES.register("holm_oak_boat",

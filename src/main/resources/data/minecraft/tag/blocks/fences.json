@@ -1,0 +1,10 @@
+{
+  "replace" : false,
+  "values" : [ 
+  "ellada:holm_oak_fence",
+  "ellada:weathered_oak_fence",
+  "ellada:exposed_oak_fence",
+  "ellada:blue_oak_fence",
+  "ellada:olive_fence"
+  ]
+}

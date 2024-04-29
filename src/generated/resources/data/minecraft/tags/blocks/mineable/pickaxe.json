@@ -1,0 +1,24 @@
+{
+  "values": [
+    "ellada:elladanite",
+    "ellada:elladanite_stairs",
+    "ellada:elladanite_slab",
+    "ellada:elladanite_pressure_plate",
+    "ellada:elladanite_button",
+    "ellada:cobbled_elladanite",
+    "ellada:cobbled_elladanite_slab",
+    "ellada:cobbled_elladanite_stairs",
+    "ellada:cobbled_elladanite_wall",
+    "ellada:elladanite_bricks",
+    "ellada:elladanite_brick_wall",
+    "ellada:slaked_elladanite",
+    "ellada:slaked_elladanite_stairs",
+    "ellada:slaked_elladanite_button",
+    "ellada:slaked_elladanite_bricks",
+    "ellada:slaked_elladanite_brick_stairs",
+    "ellada:elladanite_brick_slab",
+    "ellada:slaked_elladanite_brick_wall",
+    "ellada:chiseled_slaked_elladanite",
+    "ellada:slaked_elladanite_pillar"
+  ]
+}

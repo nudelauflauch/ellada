@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cobbled_elladanite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ellada:cobbled_elladanite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ellada:elladanite_from_cobbled_elladanite"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_cobbled_elladanite",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ellada:elladanite_from_cobbled_elladanite"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,8 +1,0 @@
-{
-  "type" : "minecraft:stonecutting",
-  "ingredient" : {
-    "item" : "ellada:elladanite_bricks"
-  },
-  "result" : "ellada:elladanite_brick_stairs",
-  "count" : 1
-}

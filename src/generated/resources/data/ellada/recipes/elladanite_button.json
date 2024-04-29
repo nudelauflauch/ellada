@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "ellada:elladanite"
+    }
+  ],
+  "result": {
+    "item": "ellada:elladanite_button"
+  }
+}
