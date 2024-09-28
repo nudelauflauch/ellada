@@ -6,14 +6,11 @@ import com.mojang.serialization.Codec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.RotatedPillarBlock;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType;
 
 import java.util.List;
-import java.util.function.Predicate;
 
 public class OliveTreeRootDecorator extends TreeDecorator {
 
@@ -27,14 +24,9 @@ public class OliveTreeRootDecorator extends TreeDecorator {
     }
 
     @Override
-    public TreeDecoratorType<?> type() {
-        return TreeStuffInit.OLIVE_TREE_ROOT.get();
-    }
-
-    @Override
     public void place(Context pContext) {
         RandomSource randomsource = pContext.random();
-        for (int i = 0; i < log_num*4; i++) {
+        for (int i = 0; i < log_num * 4; i++) {
             List<BlockPos> logs = pContext.logs();
             BlockPos lowest_log = logs.get(0);
 
@@ -42,12 +34,16 @@ public class OliveTreeRootDecorator extends TreeDecorator {
 
             Direction direction = Direction.Plane.HORIZONTAL.getRandomDirection(randomsource);
 
-            pContext.setBlock(new BlockPos(
-                            lowest_log.getX() + direction.getStepX(),
-                             y,
-                            lowest_log.getZ() + direction.getStepZ()),
-                    BlockInit.OLIVE_LOG.get().defaultBlockState().setValue(RotatedPillarBlock.AXIS, direction.getAxis()));
-
+            int new_x = lowest_log.getX() + direction.getStepX();
+            int new_z = lowest_log.getZ() + direction.getStepZ();
+            if (!pContext.isAir(new BlockPos(new_x,y,new_z))) {
+                pContext.setBlock(new BlockPos(new_x, y, new_z), BlockInit.OLIVE_LOG.get().defaultBlockState().setValue(RotatedPillarBlock.AXIS, direction.getAxis()));
+            }
         }
+    }
+
+    @Override
+    public TreeDecoratorType<?> type() {
+        return TreeStuffInit.OLIVE_TREE_ROOT.get();
     }
 }

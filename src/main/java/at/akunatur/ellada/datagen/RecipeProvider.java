@@ -26,7 +26,7 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider im
     }
 
     @Override
-    protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
+    public void buildRecipes(Consumer<FinishedRecipe> pWriter) {
 
         List<RegistryObject<? extends Block>>  blue_holm_oak = List.of(
                 BlockInit.BLUE_OAK_STAIRS,

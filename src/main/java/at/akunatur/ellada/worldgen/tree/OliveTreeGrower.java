@@ -11,6 +11,6 @@ public class OliveTreeGrower extends AbstractTreeGrower {
     @Nullable
     @Override
     protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
-        return ModConfiguredFeatures.OLIVE_KEY;
+        return ModConfiguredFeatures.OLIVE_BIOME_KEY;
     }
 }
